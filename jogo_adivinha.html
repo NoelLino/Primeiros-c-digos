@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia() {
+        var numero = parseInt(Math.round(Math.random() * 10))
+        return numero
+    }
+    
+    sorteia()
+
+    var tentativa = 1
+
+    while(tentativa <= 3) {
+        var numero = parseInt(prompt("tente acertar o número pensado!"))
+        if(numero == sorteia){
+            mostra("Parabéns você acertou! O número era " + numero)
+            break;
+
+        } else {
+            mostra("Você errou, tente novamente!")
+            tentativa++
+        }
+    }
+    mostra("FIM")
+  
+</script>

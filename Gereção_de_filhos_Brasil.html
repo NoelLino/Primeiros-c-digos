@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+
+<script>
+	function pulalinha() {
+		document.write("<br>");
+	}
+	function mostra(texto) {
+		document.write(texto);
+		pulalinha();
+	}
+
+	var ano = 2022;
+	var primeiroAno = 1500;
+	var tempo = ano - primeiroAno;
+	var geracoes = tempo / 28 ;
+
+	mostra("No brasil desde 1500 tivemos no total " + Math.round(geracoes) + " Gerações");
+
+</script>
